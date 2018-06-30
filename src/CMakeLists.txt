@@ -82,6 +82,6 @@ set_property(TARGET Miner PROPERTY OUTPUT_NAME "miner")
 #TODO Specify the name of daemon for your currency
 set_property(TARGET Daemon PROPERTY OUTPUT_NAME "yttriumd")
 
-CMAKE_C_ARCHIVE_CREATE ( = <CMAKE_AR> qcs <TARGET> <LINK_FLAGS> <OBJECTS>)
-CMAKE_C_ARCHIVE_FINISH ( = true) # Or any other no-op command
+CMAKE_CXX_ARCHIVE_CREATE ( = <CMAKE_AR> qcs <TARGET> <LINK_FLAGS> <OBJECTS>)
+CMAKE_CXX_ARCHIVE_FINISH ( = true) # Or any other no-op command
 SET(CMAKE_AR  "gcc-ar")
